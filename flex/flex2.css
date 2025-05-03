@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+.main {
+  background-color: beige;
+  height: 100vh;
+  width: 100%;
+
+  border: 1px dashed #000;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+
+}
+
+.sub1 {
+  background-color: white;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+
+
+}
+
+.sub2 {
+  background-color: rgb(241, 241, 241);
+  height: 25%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+
+.sub3 {
+  background-color: white;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+
+.sub4 {
+  background-color: white;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+
+.a1 {
+  background-color: chocolate;
+  height: 100%;
+  width: 50%;
+}
+
+.a2 {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+
+}
+
+.c1 {
+  background-color: blue;
+  height: 50%;
+  width: 100%;
+}
+
+.c2 {
+  background-color: blue;
+  height: 50%;
+  width: 100%;
+}
+
+.y1 {
+  background-color: yellow;
+  height: 100%;
+  width: 25%;
+}
+
+.y2 {
+  background-color: yellow;
+  height: 100%;
+  width: 25%;
+}
+
+.y3 {
+  background-color: yellow;
+  height: 100%;
+  width: 25%;
+}
+
+.y4 {
+  background-color: yellow;
+  height: 100%;
+  width: 25%;
+}
+
+.g1 {
+  background-color: green;
+  height: 100%;
+  width: 50%;
+}
+
+.g2 {
+  background-color: green;
+  height: 100%;
+  width: 50%;
+}
+
+.r1 {
+  background-color: red;
+  height: 100%;
+  width: 50%;
+}
+
+.r2 {
+  background-color: red;
+  height: 100%;
+  width: 50%;
+}
+
+/* media padding start */
+@media screen and (max-width:325px) {
+
+  /* .main{ */
+  /* background-color: rgb(5, 7, 8); */
+  /* } */
+  .sub1 {
+    flex-direction: column;
+    
+  }
+  .a1{
+    
+    width: 100%;
+  }
+  .a2{
+    
+    width: 100%;
+  }
+  .c1 {
+    width: 100%;
+    background-color: rgb(4, 255, 0);
+  }
+  .sub2 {
+    flex-direction: column;
+    width: 100%;
+  }
+  #y0{
+    width: 100%;
+
+  }
+}

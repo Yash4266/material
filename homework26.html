@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            border: 2px dashed black;           
+            /* flex-direction: ; */
+            
+            height: 100vh;
+            width: 100%;
+            justify-content:space-evenly;
+            align-items: center;
+            
+
+        }
+        .sub1{
+            height: 90%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .sub2{
+            height: 90%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            
+        }
+        #q1{
+            background-color: cadetblue;
+            height: 25%;
+            width: 90%;
+        }
+        #q2{
+            /* background-color:yellow; */
+            height: 25%;
+            width: 90%;
+        }
+        #q3{
+            background-color:green;
+            height: 25%;
+            width: 90%;
+        }
+        #q4{
+            background-color: pink;
+            height: 25%;
+            width: 90%;
+        }
+        #q5{
+            
+            height: 25%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            /* padding: 10px; */
+            justify-content: space-around;
+            gap: 10px;
+        }
+        .w1{
+            background-color: rgb(214, 127, 21);
+            height: 50%;
+            width: 100%;
+        }
+        .w2{
+            background-color: darkorange;
+            height: 50%;
+            width: 100%;
+        }
+        .e1{
+            background-color: rgb(110, 206, 14);
+            height: 100%;
+            width: 100%;
+        }
+        .a1{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .e2{
+            background-color: chartreuse;
+            height: 100%;
+            width: 100%;
+        }
+        .a2{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+     <div class="main">
+        <div class="sub1">
+            <div class="a1" id="q1"> </div>
+            <div class="a1" id="q2">
+               <div class="e1" id="r1"></div> 
+               <div class="e1" id="r2"></div> 
+               
+
+            </div>
+            <div class="a1" id="q3"> </div>
+            <div class="a1" id="q4"> </div>
+        </div>
+        <div class="sub2">
+            <div class="a2" id="q5"> 
+                <div class="w1"></div>
+                <div class="w1"></div>
+                
+
+            </div>
+            <div class="a2" id="q2"> 
+                <div class="e2" id="r1"></div> 
+               <div class="e2" id="r2"></div>
+            </div>
+            <div class="a2" id="q3"> </div>
+            <div class="a2" id="q4"> </div>
+        </div>
+     </div>
+</body>
+</html>

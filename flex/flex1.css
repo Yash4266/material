@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: rgb(19, 232, 94);
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#d1 {
+    background-color: rgb(218, 20, 165);
+    height: 10%;
+    width: 100%;
+    border: 2px solid black;
+}
+
+#d3 {
+    background-color: rgb(157, 135, 179);
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+}
+
+#d4 {
+    background-color: rgb(227, 112, 70);
+    height: 10%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+
+
+}
+
+.d1 {
+    background-color: rgb(153, 132, 174);
+    height: 50px;
+    width: 90%;
+    border: 2px solid black;
+}
+
+.div1 {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+
+#d9 {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA PADDING START */
+@media screen and (max-width:768px) {
+    .main {
+        background-color: lightcyan;
+    }
+
+    #d3 {
+        height: 100%;
+        width: 100%;
+        font-size: 60%;
+        /* flex-direction: column; */
+    }
+
+    .div {
+        height: 30%;
+    }
+
+    #d9 {
+        height: 100%;
+
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .main {
+        background-color: rgb(62, 123, 123);
+    }
+
+    #d3 {
+        height: 100%;
+        width: 100%;
+        font-size: 50%;
+        flex-direction: column;
+    }
+
+    .div1 {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:475px) {
+        .main {
+            background-color: rgb(189, 231, 135);
+        }
+    
+        #d3 {
+            height: 100%;
+            width: 100%;
+            font-size: 50%;
+            flex-direction: column;
+        }
+    
+        .div1 {
+            flex-direction: column;
+        }
+    }
+@media screen and (max-width:320px) {
+            .main {
+                background-color: rgb(220, 161, 218);
+            }
+        
+            #d3 {
+                height: 100%;
+                width: 100%;
+                font-size: 50%;
+                flex-direction: column;
+            }
+        
+            .div1 {
+                flex-direction: column;
+            }
+        
+    }

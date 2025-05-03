@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            height: 100vh;
+            width: 100%;
+            gap: 5px;
+            border:2px solid #000;
+        }
+        #r1{
+            grid-row: 1/4;
+            grid-column: 1/2;
+            background-color: green;
+        }
+        #r2{
+            grid-row: 1/2;
+            grid-column:2/4;
+            background-color:blue;
+        }
+        #r3{
+            grid-row:2/3;
+            grid-column:2/3;
+            background-color:rgb(154, 28, 146);
+        }
+        
+        #r4{
+            grid-row:2/3;
+            grid-column:3/4;
+            background-color:rgb(21, 21, 40);
+        }
+        #r5{
+            grid-row:3/4;
+            grid-column:2/3;
+            background-color:rgb(10, 78, 133);
+        }
+        #r6{
+            grid-row:3/4;
+            grid-column:3/4;
+            background-color:rgb(191, 255, 15);
+        }
+        #r7{
+            grid-row:1/2;
+            grid-column:4/5;
+            background-color:rgb(10, 78, 133);
+        }
+        #r8{
+            grid-row:2/4;
+            grid-column:4/5;
+            background-color:rgb(56, 149, 82);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1" id="r1"></div>
+        <div class="sub1" id="r2"></div>
+        <div class="sub1" id="r3"></div>
+        <div class="sub1" id="r4"></div>
+        <div class="sub1" id="r5"></div>
+        <div class="sub1" id="r6"></div>
+        <div class="sub1" id="r7"></div>
+        <div class="sub1" id="r8"></div>
+    </div>
+</body>
+</html>
