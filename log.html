@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a=[]
+        function getdata(){
+            let x=document.getElementById("txt1").value
+            let y=document.getElementById("txt2").value
+            let z={"email":x,"password":y}
+            a.push(z)
+            // document.getElementById("txt1").value=" "
+            console.log(a);
+            document.getElementById("txt1").value=""
+            document.getElementById("txt2").value=""
+          }
+          
+          function loginsuccessfully(){
+            let x=document.getElementById("txt1").value
+            let y=document.getElementById("txt2").value
+            f=false
+            for(i=0;i<a.length;i++){
+
+                s=a[i]
+                if(s.email==x && s.password==y){
+                    f=true
+                    alert("login successfully")
+
+                }
+            }
+            if(f==false){
+                alert("not found")
+            }
+               
+            document.getElementById("txt1").value=""
+            document.getElementById("txt2").value=""
+            }
+          
+    </script>
+</head>
+<body>
+    <input type="email" id="txt1" placeholder="Enter E-mail" ><br>
+    <input type="password" id="txt2" placeholder="Enter password" ><br>
+    <button id="btn1" onclick="getdata()">Register</button>
+    <button id="btn2" onclick="loginsuccessfully()">Login</button>
+
+</body>
+</html>

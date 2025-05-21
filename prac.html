@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+        y="<table border='2'>"
+            for(i=0;i<a.length;i++){
+                y=y+`<tr><td>${a[i]}</td>
+                    <td><button onclick='upd(${i})'>update</button></td>
+                    <td><button onclick='del(${i})'>delete</button></td>
+                    </tr>`
+            }
+            y=y+"</table>"
+            document.getElementById("ans").innerHTML=y
+        }
+        function upd(index){
+            let x=prompt("enter the new value")
+            a[i]=x;
+            display()
+        }
+        function del(index){
+            a.splice(index,1)
+            display()
+        }
+
+        let a=[]
+        function getdata(){
+            let x=document.getElementById("txt1").value
+            a.push(x)
+            console.log(a);
+            document.getElementById("txt1").value=""
+            display()
+                      
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <button onclick="getdata()">add</button>
+    <div id="ans"></div>
+</body>
+</html>

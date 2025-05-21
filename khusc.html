@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function table(){
+            let y="<table border='2px'>"
+                for(i=0;i<a.length;i++){
+                    y=y+`<tr><td>${a[i]}</td>
+                        <td><button onclick='rem(${i})'>delete</buttton</td>
+                        <td><button onclick='upd(${i})'>update</buttton</td>
+                        </tr>`
+                        
+
+                }
+                y=y+"</table>"
+                document.getElementById("ans").innerHTML=y
+        }
+        let a=[]
+        let k;
+        function getdata(){
+            let x=document.getElementById("btn1").innerHTML
+            if(x=='click')
+        {
+            let x =document.getElementById("txt1").value
+            a.push(x)
+            document.getElementById("txt1").value=" "
+            table()
+        }else{
+            let n=document.getElementById("txt1").value
+            a[k]=n;
+            table()
+            document.getElementById("btn1").innerHTML="click"
+        }
+            
+            // console.log(a);
+            
+        }
+        function rem(index){
+            a.splice(index,1)
+            table()
+        }
+        function upd(index){
+            k=index;
+            document.getElementById("btn1").innerHTML="update"
+            document.getElementById("txt1").value=a[index]
+            table()
+        }
+
+        function removedata(){
+            a.pop()
+            table()
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <button id="btn1" onclick="getdata()">click</button>
+    <button onclick="removedata()">pop</button>
+    <div id="ans"></div>
+</body>
+</html>

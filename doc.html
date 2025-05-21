@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+            let y="<table border='2px'>"
+                for(i=0;i<a.length;i++){
+                    y=y+"<tr><td>"+a[i]+"</tr></td>"
+                }
+                y=y+"</table>"
+                document.getElementById("ans").innerHTML=y
+
+        }
+        let a=[]
+        function getdata(){
+            
+            let x=document.getElementById("txt1").value
+            a.push(x)
+            display()
+            
+            }
+         function removedata(){
+            a.pop()
+            display()
+            
+            
+         }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <button onclick="getdata()">click</button>
+    <button onclick="removedata()">pop</button>
+    <div id="ans"></div>
+</body>
+</html>

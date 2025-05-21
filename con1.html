@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="con.css">
+    <script>
+        let a = []
+        function table() {
+            let y = `<table border='2px' id="t1">
+                <tr id="tr" style="background-color:rgb(48 12 1);height:30px;">
+                <th>Contact name</th>
+                <th>E-mail</th>
+                <th>Contact Number</th>
+                <th>action</th>
+                </tr>`
+            
+            for (i = 0; i < a.length; i++) {
+                    y = y + `<tr>
+                <td>${a[i].name}</td>
+                <td>${a[i].email}</td>
+                <td>${a[i].number}</td>
+                <td><button onclick=update(${i})>update</button>
+                    <button onclick=delete(${i})>delete</button></td>
+                </tr>`
+            }
+            y = y + '</table>'
+            document.getElementById("ans").innerHTML=y
+        }
+        
+        function getdata() {
+            let x = document.getElementById("txt1").value
+            let y = document.getElementById("txt2").value
+            let z = document.getElementById("txt3").value
+            let d = { "txt1": x, "txt2": y, "txt3": z }
+            // console.log(d);
+            a.push(d)
+            console.log(a);
+            table()
+            document.getElementById("txt1").value = ""
+            document.getElementById("txt2").value = ""
+            document.getElementById("txt3").value = ""
+        }
+
+        function update(index){
+            let x=prompt("enter the new value")
+            a[i]=x;
+            a[i]=y;
+            a[i]=z;
+            table()
+        }
+        function del(index){
+            a.splice(index,1)
+
+        }
+        
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 id="h1">GOVARDHAN</h1>
+        <h1 id="h2">INSTITUTE</h1>
+    </nav>
+    <div class="main">
+        <div class="content">
+            <h1>My Contacts</h1>
+            <form id="f1">
+                <label for="">Contact name</label><br>
+                <input type="text" id="txt1" placeholder="Enter contact name" <br>
+                <label for="">E-mail</label><br>
+                <input type="email" id="txt2" placeholder="Enter email" <br>
+                <label for="">Contact Number</label><br>
+                <input type="text" id="txt3" placeholder="Enter contact number" <br>
+                <button id="btn1" type="button" onclick="getdata()">Add Contact</button>
+            </form>
+            <div id="ans"></div>
+        </div>
+    </div>
+</body>
+
+</html>
